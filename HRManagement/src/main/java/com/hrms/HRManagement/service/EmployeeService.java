@@ -27,4 +27,14 @@ public class EmployeeService {
         return repo.findById(employeeId);
     }
 
+
+    public Employee saveEmployee(Employee employee) {
+        return repo.save(employee);
+    }
+
+
+    public void deleteEmployee(Long employeeId) {
+        repo.deleteById(employeeId);
+    }
+
 }
